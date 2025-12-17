@@ -31,7 +31,7 @@ jobs:
       !github.event.repository.is_template
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
-      ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
+      ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue_number }}
 
     steps:
       - name: Checkout
